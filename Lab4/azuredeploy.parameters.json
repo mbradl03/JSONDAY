@@ -1,0 +1,23 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "adminUsername": {
+        "value": "mbradl03"
+      },
+      "adminPassword": {
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/145bd006-93bd-43d4-87bb-fdc0b75c6b5d/resourceGroups/lab3/providers/Microsoft.KeyVault/vaults/Vault2345"
+          },
+          "secretName": "lab4vm1"
+        }
+      },
+      "vnetName": {
+          "value": "ubuntuVnet"
+      },
+      "subnetName": {
+          "value": "ubuntuSubnet"
+      }
+    }
+  }
