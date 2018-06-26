@@ -1,6 +1,4 @@
-/*
-// Azure Resource Manager Template Snippets 
-*/
+{
 "Azure Resource Manager (ARM) Template": {
     "prefix": "arm!",
     "body": [
@@ -24,8 +22,7 @@
         "    \"parameters\": {}",
         "}"
     ],
-    "description": "Skeleton ARM Parameters Template"
-},
+    "description": "Skeleton ARM Parameters Template"{},
 "Variable": {
     "prefix": "arm-variable",
     "body": [
@@ -1250,4 +1247,5 @@
             "}"
     ],
     "description": "Azure Container Instance"
+}
 }
